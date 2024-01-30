@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './page.module.css';
+import Search from '@/components/searchBar';
 // ...
 
 export default function Home() {
@@ -28,10 +29,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
+        <div>
+          <Search />
+        </div>
         <div>
           <form onSubmit={handleSubmit}>
             <input
